@@ -1,5 +1,8 @@
 import React from "react";
-import Test from "./test_component";
+
+function Test() {
+  return <h2>what the</h2>;
+}
 
 function App() {
   return (
