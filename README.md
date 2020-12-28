@@ -1,10 +1,8 @@
-<center> first practice</center>
-
-<center>처음 만들어본 react & markdown</center>
-
----
-
-### 용어 & 이해 (필기노트)
+<h2 align="center">first practice </br>
+처음 만들어본 react & markdown</h2>
+  
+### 용어 & 이해
+>>>>>>> 097c9144e45ae281845f2a5fc6596dd73f0cdb30
 
 1. Components
    - HTML을 반환하는 함수
