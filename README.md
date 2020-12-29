@@ -3,7 +3,21 @@
 
 <h3 align="center">고수들은 볼 필요 없습니다!</h3>
   
-### 용어 & 이해
+### 목차
+- 1. Components</br>
+    1.1 Father - Child?
+- 2. Dynamic Components (function-components basic)</br>
+    2.1 Array, map() ? 그게 뭔데 ? </br>
+    2.2 Father 내 img 태그 작성법 </br>
+    2.3 id-key **(map())**</br>
+    2.4 prop-types</br>
+- 3. Class & State</br>
+    3.1 Class ? 그게 뭔데요?</br>
+    3.2 이것만 가지고 끝일까? **Method 소매넣기!**</br>
+    3.3 Class & Method</br>
+    3.4 State</br>
+      state, setState() : 서론(skip하셔도 됩니다.)</br>
+      state(), setState() : render()의 재실행(main)
 
 1.  Components
 
