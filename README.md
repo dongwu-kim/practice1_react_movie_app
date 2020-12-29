@@ -147,8 +147,13 @@
       ```
 
     - 2.4 prop-types
+
       > 우리는 종종 components의 prop과 관련한 실수를 저지를 수 있으니, 우리보다 더 명석한 두뇌를 가진 컴퓨터의 힘을 빌리기로 하자.
-      > 지금 소개할 prop-types의 경우 npm, yarn으로 설치할 수 있는데, 자세한 설치방법에 대한 내용은 [npmjs] (https://www.npmjs.com/package/prop-types) 를 참고하자.
-      > prop-types의 경우 우리가 저지를 실수에 대해 체크하고, 조언해주는 역할이라고 생각하면 된다. 다른 파일에서 작성하던 components에 대한 에러를 줄이고자 한다면, 당장 까는게 좋을 정도로 말이다 🙆‍♂️🙆‍♂️
-      > prop-types에 대한 예찬은 여기까지 하고, 자세한 내용은 리액트의 공시문서를 참조해보자 친절한 리액트는 Vanilla와 달리 공식문서화가 아주 잘 되어 있다는 것이 큰 장점이니까!
-      > [prop-types] (https://ko.reactjs.org/docs/typechecking-with-proptypes.html)
+
+      지금 소개할 prop-types의 경우 npm, yarn으로 설치할 수 있는데, 자세한 설치방법에 대한 내용은 [npmjs] (https://www.npmjs.com/package/prop-types) 를 참고하자.
+
+      prop-types의 경우 우리가 저지를 실수에 대해 체크하고, 조언해주는 역할이라고 생각하면 된다. 다른 파일에서 작성하던 components에 대한 에러를 줄이고자 한다면, 당장 까는게 좋을 정도로 말이다 🙆‍♂️🙆‍♂️
+
+      prop-types에 대한 예찬은 여기까지 하고, 자세한 내용은 리액트의 공시문서를 참조해보자 친절한 리액트는 Vanilla와 달리 공식문서화가 아주 잘 되어 있다는 것이 큰 장점이니까!
+
+      [prop-types] (https://ko.reactjs.org/docs/typechecking-with-proptypes.html)
