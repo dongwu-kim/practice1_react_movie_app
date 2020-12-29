@@ -55,8 +55,11 @@
         > 자, 서론이 길어졌지만 map()에 대해 얘기해보자, 방금도 말했듯 우리는 forEach()와 map()을 동일선상에 놓는 오류에 빠질 수 있다. 하지만, 엄연히 말하자면 이 둘은 같은 역할을 하는 것 처럼 보이지만 전혀 다른 메서드라고도 볼 수 있다.
 
         > forEach()의 경우 Array 내부 각 요소에 대한 콜백함수가 실행된 후 리턴값이 없기에 **수정**의 기능을 하는 메서드이다.
+
         > map()의 경우 콜백을 모든 요소에 수행한 뒤, 동일한 크기를 가지는 배열을 결과로 반환하는 **재생성**기능의 메서드이다.
+
         > 즉, 두 메서드는 `console.log()`에서는 같은 기능처럼 보이지만 엄연히 원본에 대한 보존이 되느냐, 아니느냐 라는 차이를 가지게 된다.
+
         > **그렇다면 랜더링 개선에 있어 map()과 forEach()중 어떤 것이 최적화에 있어 유용할까?**
 
       - 2.1.2 `forEach() & map()`의 사용처
@@ -113,11 +116,11 @@
           > 위와 같이 새로운 배열을 만들어주지 않는다면, 아마도 당신은 원본 배열의 property 변화를 실시간으로 경험할 수 있을 것이다. 🧔
           > 그게 아니더라도, 저런 습관을 들이면 언제든 꼬일 일은 없을 것이다! (셀프다짐)
 
-    - 2.2 Father 내 img 태그 작성법
+      - 2.2 Father 내 img 태그 작성법
 
-      - alt 지정을 꼭 해주도록 하자.
+        > alt 지정을 꼭 해주도록 하자.
 
-        > alt의 존재이유는 사진을 구현할 수 없을 때의 설명으로 생각하면 된다.
+        > alt의 존재이유는 image를 랜더링할 수 없을 때의 설명으로 생각하면 된다.
 
         ```javascript
         function Father({ name, peopleImg }) {
@@ -132,28 +135,28 @@
         }
         ```
 
-    - 2.3 id-key **(map())**
+      - 2.3 id-key **(map())**
 
-      > React 에서 key prop problem을 해결하기 위한 방법으로, Array 내 Object value로 각 객체별 id를 할당해주고, Child의 prop 할당으로 key를 할당해주는 것이다.
+        > React 에서 key prop problem을 해결하기 위한 방법으로, Array 내 Object value로 각 객체별 id를 할당해주고, Child의 prop 할당으로 key를 할당해주는 것이다.
 
-      ```javascript
-      const philoarr = [
+        ```javascript
+        const philoarr = [
         {id: 1, name:name, image: image,},
         {id: 2, name:name, image: image,},
         {id: 3, name:name, image: image,}
-      ] //초기 Arr 내에 id 할당
-      <Philo name={arr.name} peopleImg={arr.image} key={arr.id} />
-      // Child 내에서 prop으로 key 할당
-      ```
+        ] //초기 Arr 내에 id 할당
+        <Philo name={arr.name} peopleImg={arr.image} key={arr.id} />
+        // Child 내에서 prop으로 key 할당
+        ```
 
-    - 2.4 prop-types
+      - 2.4 prop-types
 
-      > 우리는 종종 components의 prop과 관련한 실수를 저지를 수 있으니, 우리보다 더 명석한 두뇌를 가진 컴퓨터의 힘을 빌리기로 하자.
+        > 우리는 종종 components의 prop과 관련한 실수를 저지를 수 있으니, 우리보다 더 명석한 두뇌를 가진 컴퓨터의 힘을 빌리기로 하자.
 
-      지금 소개할 prop-types의 경우 npm, yarn으로 설치할 수 있는데, 자세한 설치방법에 대한 내용은 [npmjs] (https://www.npmjs.com/package/prop-types) 를 참고하자.
+        지금 소개할 prop-types의 경우 npm, yarn으로 설치할 수 있는데, 자세한 설치방법에 대한 내용은 [npmjs] (https://www.npmjs.com/package/prop-types) 를 참고하자.
 
-      prop-types의 경우 우리가 저지를 실수에 대해 체크하고, 조언해주는 역할이라고 생각하면 된다. 다른 파일에서 작성하던 components에 대한 에러를 줄이고자 한다면, 당장 까는게 좋을 정도로 말이다 🙆‍♂️🙆‍♂️
+        prop-types의 경우 우리가 저지를 실수에 대해 체크하고, 조언해주는 역할이라고 생각하면 된다. 다른 파일에서 작성하던 components에 대한 에러를 줄이고자 한다면, 당장 까는게 좋을 정도로 말이다 🙆‍♂️🙆‍♂️
 
-      prop-types에 대한 예찬은 여기까지 하고, 자세한 내용은 리액트의 공시문서를 참조해보자 친절한 리액트는 Vanilla와 달리 공식문서화가 아주 잘 되어 있다는 것이 큰 장점이니까!
+        prop-types에 대한 예찬은 여기까지 하고, 자세한 내용은 리액트의 공식문서를 참조해보자 친절한 리액트는 Vanilla와 달리 공식문서화가 아주 잘 되어 있다는 것이 큰 장점이니까!
 
-      [prop-types] (https://ko.reactjs.org/docs/typechecking-with-proptypes.html)
+        [prop-types] (https://ko.reactjs.org/docs/typechecking-with-proptypes.html)
