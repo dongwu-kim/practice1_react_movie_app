@@ -16,8 +16,8 @@
     3.2 이것만 가지고 끝일까? **Method 소매넣기!**</br>
     3.3 Class & Method</br>
     3.4 State</br>
-      state, setState() : 서론(skip하셔도 됩니다.)</br>
-      state(), setState() : render()의 재실행(main)
+      - state, setState() : 서론(skip하셔도 됩니다.)
+      - state(), setState() : render()의 재실행(main)
 
 1.  Components
 
