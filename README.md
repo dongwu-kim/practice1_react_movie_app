@@ -1,5 +1,7 @@
 <h2 align="center">first practice </br>
 처음 만들어본 react & markdown</h2>
+
+<h3 align="center">고수들은 볼 필요 없습니다!</h3>
   
 ### 용어 & 이해
 
@@ -201,4 +203,43 @@
 
     어떤가, 결국 다른 방법을 사용하는 것 뿐이고, 우린 Components를 만드는 2가지 방법에 대해 벌써 알게 된 것이다.
 
-  - 3.2 이것만 가지고 끝일까? **Method** 등장!
+  - 3.2 이것만 가지고 끝일까? **Method 소매넣기!**
+
+    > `class Child extends Father` 자, 이러한 기본형을 알게 되었으니 이제 본격적인 코딩을 시작해보자.
+
+    ```javascript
+    class App extends React.Component {
+      render()
+    }
+    ```
+
+    위 코드부터 차근차근 적어보자. 근데 적다보니, 처음보는 녀석이 있는데다가, 우린 이 녀석을 정의한 적 조차 없다.
+    `render()` 바로 이 녀석이다.
+
+    2장에서도 말했듯 우리가 직접 정의한 적 없고, 라이브러리나 다른 Class에서 정의한 함수를 불러온다면 명칭이 무엇이라고 했던가?
+
+    그래, 바로 **method, 메서드**다. 그럼 이 녀석은 함수가 아니냐고 물어볼 수 있지만, 엄연히 명칭을 구분하는 것을 자주 연습하는 것이 좋다. 의사소통은 하나의 단어를 듣고 양측에서 같은 것을 연상할 수 있을 때 가장 효율적이니까.
+
+    그럼 우린 이 method(), `render()`를 어디서 가져온 것일까? 바로 extends(=from) React.Component(=father)에 존재하는 메서드다.
+
+    🙋‍♂️하나만 넣어줬을 뿐인데, 이러한 기능을 제공해준다면 안 쓸 이유가 없겠죠?
+
+    그럼 용어는 설명이 다 된 것 같으니 본격적인 State 활용을 위한 글로 넘어가보자.
+
+  - 3.3 Class & Method
+
+    > 둘의 조합이 기가 막히겠죠?
+
+    ```javascript
+    class App extends React.Component {
+      render() {
+        return <h1>Hello, world</h1>;
+      }
+    }
+    ```
+
+    1장과 2장의 장황한 글을 제외한 다음, 코드만 조합해도 위와 같이 class components를 만드는 데 우리는 한 발 다가서게 된다.
+
+    그리고 우린 본격적으로 HTML을 가상 DOM을 활용하여 구축하는 신기술에 접근할 수 있게 되는 것이다.
+
+    > 사실 Class components는 실무에서 유지, 보수용 개념으로만 생각해는 것이 좋다. 최신 개발에서는 함수형 components를 선호하기 때문이다 ㅠㅠ 그래도 알아두면 좋잖아!
