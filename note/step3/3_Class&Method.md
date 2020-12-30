@@ -2,15 +2,15 @@
 
 - [Main](../../README.md)
 
-- 현재 장의 노트
+현재 장의 노트
 
-  - [3.1 Class](3_Class.md)
+- [3.1 Class](3_Class.md)
 
-  - [3.2 Method](3_Method.md)
+- [3.2 Method](3_Method.md)
 
-  - **3.3 Class & Method**
+- **3.3 Class & Method**
 
-  - [3.4 State](3_State.md)
+- [3.4 State](3_State.md)
 
   - 3.3 Class & Method
 
