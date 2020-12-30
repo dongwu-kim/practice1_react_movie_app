@@ -6,7 +6,7 @@
 ### 목차
 - 1. [Components](note/1_Components.md)</br>
     1.1 Father - Child?
-- 2. [Dynamic Components (function-components basic)](note/2_Dynamic_Components.md)</br>
+- 2. [Dynamic Components (function-components)](note/2_Dynamic_Components.md)</br>
     2.1 Array, map() ? 그게 뭔데 ? </br>
     2.2 Father 내 img 태그 작성법 </br>
     2.3 id-key **(map())**</br>
