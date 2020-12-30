@@ -1,6 +1,6 @@
 3. [Class & State](3_Class_State.md)
 
-- [Main](../../README.md)
+- [Back to Main](../../README.md)
 
 현재 장의 노트
 
