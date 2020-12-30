@@ -12,9 +12,9 @@
     2.3 id-key **(map())**</br>
     2.4 prop-types</br>
 - 3. [Class & State](note/step3/3_Class_State.md)</br>
-    3.1 Class ? 그게 뭔데요?</br>
-    3.2 이것만 가지고 끝일까? **Method 소매넣기!**</br>
-    3.3 Class & Method</br>
-    3.4 State</br>
+    [3.1 Class ? 그게 뭔데요?](note/step3/3_Class.md)</br>
+    [3.2 이것만 가지고 끝일까? Method 소매넣기!](note/step3/3_Method.md)</br>
+    [3.3 Class & Method](note/step3/3_Class&Method.md)</br>
+    [3.4 State](note/step3/3_State.md)</br>
       - state, setState() : 서론(skip하셔도 됩니다.)
       - state, setState() : render()의 재실행(main)
