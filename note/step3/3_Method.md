@@ -1,4 +1,4 @@
-3.  [Class & State](3_Class_State.md)
+3. [Class & State](3_Class_State.md)
 
 - [Main](../../README.md)
 

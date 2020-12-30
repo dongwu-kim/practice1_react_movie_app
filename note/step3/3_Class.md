@@ -1,10 +1,10 @@
-3.  [Class & State](3_Class_State.md)
+3. [Class & State](3_Class_State.md)
 
 - [Main](../../README.md)
 
 현재 장의 노트
 
-**3.1 Class**
+- **3.1 Class**
 
 - [3.2 Method](3_Method.md)
 
