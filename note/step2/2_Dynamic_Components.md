@@ -1,4 +1,16 @@
-2.  Dynamic Components (function-components basic)
+2. [Dynamic Components (function-components basic)](2_Dynamic_Components.md)
+
+- [Back to Main](../../README.md)
+
+현재 장의 노트
+
+- **2.1 Array, map()**
+
+- [2.2 Father 내 img 태그 작성](2_img.md)
+
+- [2.3 Id-Key](2_id-key.md)
+
+- [2.4 prop-types](2_prop-types.md)
 
 - Components를 Copy & Paste로 작성할 수는 없습니다.
 
@@ -70,7 +82,7 @@
 
         JS는 안타깝게도 map(), forEach() 어느 메서드건 간에 Object로 요소가 구성된 Array에 대한 배려를 하지 않습니다.(뛰어난 웹을 위해서인데 DOM elements Array를 이렇게 불편하게 한다고?)
 
-        심지어 우리의 구세주인 const 선언 따위로는 **객체참조**를 막을 수 없다는 점에서 우린 절망하게 됩니다. (property 내용은 수정이 가능하고, property 항목 추가를 할 수 없을 뿐이다.)
+        심지어 우리의 구세주인 const 선언 따위로는 **객체참조**를 막을 수 없다는 점에서 우린 절망하게 됩니다. (property 내용은 수정이 가능하고, property 항목 추가를 할 수 없기 때문입니다.)
 
         > 이에 웹 개발 시에 map()을 사용할 때는 반드시 새로운 배열을 가지는 변수를 지정해줍시다.
 
@@ -85,59 +97,4 @@
 
         위와 같이 새로운 배열을 만들어주지 않는다면, 아마도 당신은 원본 배열의 property 변화를 실시간으로 경험할 수 있을 것입니다. 🧔
 
-        그게 아니더라도, 저런 습관을 들이면 언제든 꼬일 일은 없을 거야! (셀프다짐)
-
-  - 2.2 Father 내 img 태그 작성법
-
-    > alt 지정을 꼭 해주도록 합시다.
-
-    alt의 존재이유는 image를 랜더링할 수 없을 때의 설명으로 생각하면 됩니다.
-
-    React가 alt를 강조하는 이유에는 청각만을 통해 사이트를 읽는 사람이 존재하기 때문이니 너무 고깝게 생각하지는 말아주세요! 사랑하며 살기에도 팍팍한 사회니까요.
-
-    ```javascript
-    function Father({ name, peopleImg }) {
-      return (
-        <div>
-          <h2>{name}</h2>
-          <h2>
-            <img src={peopleImg} alt={name} />
-          </h2>
-        </div>
-      );
-    }
-    ```
-
-  - 2.3 id-key **(map())**
-
-    > React 에서 key prop problem을 해결하기 위한 방법으로, Array 내 Object value로 각 객체별 id를 할당해주고, Child의 prop 할당으로 key를 할당해주는 것입니다.
-
-    ```javascript
-    const philoarr = [
-    {id: 1, name:name, image: image,},
-    {id: 2, name:name, image: image,},
-    {id: 3, name:name, image: image,}
-    ] //초기 Arr 내에 id 할당
-    <Philo name={arr.name} peopleImg={arr.image} key={arr.id} />
-    // Child 내에서 prop으로 key 할당
-    ```
-
-  - 2.4 prop-types
-
-    > 우리는 종종 components의 prop과 관련한 실수를 저지를 수 있으니, 우리보다 더 명석한 두뇌를 가진 컴퓨터의 힘을 빌리기로 합시다.
-
-    지금 소개할 prop-types의 경우 npm, yarn으로 설치할 수 있는데, 자세한 설치방법에 대한 내용은 [npmjs] (https://www.npmjs.com/package/prop-types) 를 참고합시다.
-
-    prop-types의 경우 우리가 저지를 실수에 대해 체크하고, 조언해주는 역할이라고 생각하면 됩니다. 다른 파일에서 작성하던 components에 대한 에러를 줄이고자 한다면, 당장 까는게 좋을 정도로 말이죠. 🙆‍♂️🙆‍♂️
-
-    prop-types에 대한 예찬은 여기까지 하고, 자세한 내용은 리액트의 공식문서를 참조해봅시다. 친절한 리액트는 Vanilla와 달리 공식문서화가 아주 잘 되어 있다는 것이 큰 장점이니까!
-
-    [prop-types] (https://ko.reactjs.org/docs/typechecking-with-proptypes.html)
-
-    보고도 무슨 말인지 모르겠다구요?
-
-    쉽게 말씀드리면, prop-types의 경우 일종의 개발자 도구입니다. 즉, **dev환경에서** prop-type(data type) 착오로부터 생겨나는 특정 오류를 방지하고, 실제로는 어떠한 자료형이 요구되는지 검사해주는 역할을 한다고 보시면 됩니다.
-
-    이외에도 개인의 custom이 가능하고, 다양한 방식으로 응용할 수 있으니 우리 초보들은 prop-types를 한 번 쯤은 공부해두는게 팀 프로젝트에 있어 유용할겁니다!
-
-    그럼 다음 장에서 만나요🙆‍♂️🙋‍♂️🙋‍♂️
+        그게 아니더라도, 저런 습관을 들이면 언제든 꼬일 일은 없지 않을까요?
