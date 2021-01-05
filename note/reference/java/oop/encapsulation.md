@@ -6,3 +6,5 @@
   - [Polymorphism & Abstraction](polymorphism.md)
   - **Encapsulation**
   - [Inheritance](inheritance.md)
+
+---

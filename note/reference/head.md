@@ -30,4 +30,5 @@
 
    그래서 만든 노트입니다. 그러니 마음 편하게 보시고, 원하시는 파트에서는 잠깐 멈춰 생각도 해보시길 바라면서 이번 필기를 시작해보도록 하겠습니다.
 
-2. [OOP,Instance?](./java/oop.md)
+2. [Java, OOP?](./java/oop.md)
+3. [Javascript](./javascript/js_main.md)

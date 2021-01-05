@@ -64,3 +64,5 @@ string = date.StringValue();
 data Abstraction에 있어 Polymorphism의 지원은 상당히 유용하겠죠? 그렇다고 해서 단형성(Monomorphism)을 갖는 언어가 '구식'이라는 것이 아닙니다. 분명 장단점이 존재하죠. 엄격한 함수의 사용과 정교한 디버깅을 원한다면 Monomorphism은 작성이 번거로울 뿐 상당히 매력적일 수 있습니다. -> 뇌피셜😥😥
 
 그러나 우리가 사용하는 Java라는 언어는 분명히 다형성을 지원하고, 우린 이를 통해 손쉬운 data 처리가 가능함을 인정할 수 밖에 없겠습니다.
+
+code 출처 : 위키백과 - 다형성
