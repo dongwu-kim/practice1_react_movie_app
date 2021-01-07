@@ -17,13 +17,14 @@
    - String
    - Boolean
    - Symbol
+   - null
+   - undefined
+
    - Object
      - Function
      - Array
      - Date
      - RegExp
-   - Null
-   - Undefined
 
    이 중 우리가 눈여겨 봐야 할 것들은 어떠한 것들일지 생각해보죠.
 
@@ -43,4 +44,4 @@
 
    그러니 우린 이제 본격적으로 Data type을 뜯어보자구요!
 
-- [Number, String, Boolean, Symbol](./data_type/js_data_type_sub_first.md)
+- [Number, String, null & undefined](./data_type/js_data_type_sub_first.md)
