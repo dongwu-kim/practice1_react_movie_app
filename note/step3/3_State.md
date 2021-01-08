@@ -102,7 +102,7 @@
 
       - apply/call/bind 호출
 
-      **자, 여기서 중요한 점은 우리의 class components들은 당연한 듯 당연하지 않게 Java의 this. 문법을 따라간다는 점입니다.**
+      **자, 여기서 중요한 점은 우리의 class components들은 당연한 듯 당연하지 않게 Java의 this. 문법을 어느정도 따라간다는 점입니다.**
 
       아니, 당연히 class 기반으로 작성했으니 당연하잖아요? ㅎ...
 
