@@ -7,9 +7,11 @@ class App extends React.Component {
   };
   plus = () => {
     this.setState((current) => ({ num: current.num + 1 }));
+    console.log(this);
   };
   minus = () => {
     this.setState((current) => ({ num: current.num - 1 }));
+    console.log(this);
   };
   render() {
     return (

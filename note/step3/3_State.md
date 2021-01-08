@@ -92,8 +92,25 @@
 
         이는 복사가 이루어진 obj도 마찬가지입니다. this.는 복사된 obj. 메서드 내에 위치하여 복사된 obj.를 바인딩합니다.
 
+        Java의 생성자 함수와 비슷한 선언 형태를 갖는 prototype obj 역시 마찬가지로 메소드가 들어있는 해당 객체를 바인딩합니다.
+
       - 생성자 함수 호출
+
+        Js 내에서도 생성자 함수가 존재합니다. `new Function(parameter)` 의 형태로 선언하는데요, 이 또한 프로토타입과 갖느냐? 하면 당연히 아닙니다.
+
+        그러나 이 과정은 잠시 멀리 하고, 우선은 react 공부를 우선시 할게요.
+
       - apply/call/bind 호출
+
+      **자, 여기서 중요한 점은 우리의 class components들은 당연한 듯 당연하지 않게 Java의 this. 문법을 따라간다는 점입니다.**
+
+      아니, 당연히 class 기반으로 작성했으니 당연하잖아요? ㅎ...
+
+      이러한 내용들의 근거는 어디에 있을까요? 바로 [ECMA 6 classes](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes)에 있답니다. 공식문서보다는 MDN이 우리에겐 조금 더 편하니, MDN으로 링크를 걸어드릴게요.
+
+      ㅋㅋ 그럼 Js는 뭐하러 설명했냐구요? 공부잖아요 다 ~ 알아두면 도움이 됩니다.
+
+      그럼 이제 다음 내용으로 넘어가보자구요!
 
     - state, setState() : 서론(skip하셔도 됩니다.)
 
