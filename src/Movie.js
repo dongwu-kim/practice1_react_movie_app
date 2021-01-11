@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Movie({ id, title, year, summary, poster }) {
   return <h4>{title}</h4>;
-}
+} //function component
 
 Movie.propTypes = {
   //key: PropTypes.number.isRequired, key는 id와 같기 때문에 생략합니다.(만약 다르다면, 추가해야 합니다.)
