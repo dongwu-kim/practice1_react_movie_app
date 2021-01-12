@@ -1,0 +1,31 @@
+.nav {
+  width: 30px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  color: #61daee;
+  position: fixed;
+  padding: 5px;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  border-radius: 10px;
+  font-size: 10px;
+  z-index: 99;
+  font-weight: 400;
+  border: 0.5px solid rgb(101, 102, 102);
+}
+
+@media screen and (max-width: 479px) {
+  .nav {
+    bottom: 10px;
+    right: 5px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .nav {
+    bottom: 10px;
+    right: 10px;
+  }
+}

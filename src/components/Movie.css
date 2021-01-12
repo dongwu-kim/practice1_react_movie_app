@@ -4,11 +4,15 @@
 }
 
 .movie {
-  position: relative;
   background-color: #282c34;
   border: 2px solid rgb(101, 102, 102);
   color: #61daee;
   box-shadow: 5px 5px 3px #282c34;
+}
+
+.movie__container {
+  position: relative;
+  display: flex;
 }
 
 .movie img {
@@ -40,7 +44,7 @@
   color: rgb(210, 217, 224);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .movies {
     margin: 5vh 2vw 0 2vw;
   }
@@ -54,8 +58,8 @@
   .movie img {
     width: 15vw;
     height: 12vh;
-    top: 3vh;
-    left: 10px;
+    top: 10px;
+    left: 2vw;
   }
 
   .movie__date {
@@ -91,7 +95,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .movies {
     margin: 45px 2vw 0 2vw;
     padding: 0 25px;
@@ -99,7 +103,7 @@
 
   .movie {
     display: flex;
-    width: 35vw;
+    width: 40vw;
     margin: 0 auto 0 auto;
     margin-top: 10vh;
   }

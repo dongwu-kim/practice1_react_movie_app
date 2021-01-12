@@ -14,20 +14,6 @@ body {
   background-color: rgb(235, 237, 237);
 }
 
-.header {
-  width: 100%;
-  background-color: #20232a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #61daee;
-  font-weight: 300;
-  position: fixed;
-  top: 0;
-  left: auto;
-  z-index: 2;
-}
-
 .container {
   display: flex;
   width: 100%;
@@ -45,20 +31,4 @@ body {
 
 .loader__text {
   font-size: 50px;
-}
-
-@media screen and (max-width: 479px) {
-  .header {
-    font-size: 1.2rem;
-    height: 5vh;
-    letter-spacing: 0.12rem;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .header {
-    font-size: 1.4rem;
-    height: 45px;
-    letter-spacing: 0.12rem;
-  }
 }
