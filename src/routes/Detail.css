@@ -50,3 +50,17 @@
     margin: 0 5vw;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .trailer__video {
+    width: 75vw;
+    height: 30vh;
+  }
+  .detail__title {
+    margin: 2vh 0;
+  }
+  .detail__desc {
+    line-height: 1.7rem;
+    margin: 0 5vw;
+  }
+}
