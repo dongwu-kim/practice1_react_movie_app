@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  z-index: -1;
+}
+
+.container {
+  background-color: rgb(235, 237, 237);
+}
+
+.header {
+  width: 100%;
+  background-color: #20232a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #61daee;
+  font-weight: 300;
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 2;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  position: relative;
+  background-color: #282c34;
+  border: 2px solid rgb(193, 197, 197);
+  color: #61daee;
+  box-shadow: 5px 5px 3px #282c34;
+}
+
+.movie img {
+  position: absolute;
+}
+
+.movie__date {
+  margin: 0;
+}
+
+.movie__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.movie__year {
+  opacity: 0.8;
+  font-weight: 300;
+}
+.movie__genres {
+  display: flex;
+  list-style-type: none;
+  opacity: 0.8;
+  font-weight: 300;
+  flex-wrap: wrap;
+}
+
+.movie__summary {
+  color: rgb(210, 217, 224);
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    font-size: 1.2rem;
+    height: 4vh;
+    letter-spacing: 0.12rem;
+  }
+
+  .movies {
+    margin: 0 2vw 0 2vw;
+  }
+
+  .movies:first-child {
+    margin-top: 5vh;
+  }
+
+  .movie {
+    width: 75vw;
+    margin: 0 auto 0 auto;
+    margin-top: 5vh;
+  }
+
+  .movie img {
+    width: 15vw;
+    height: 12vh;
+    top: 3vh;
+    left: 10px;
+  }
+
+  .movie__date {
+    margin: 3vh 5vw 3vh 20vw;
+  }
+
+  .movie__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .movie__year {
+    font-size: 6px;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .movie__genres {
+    margin-bottom: 0.5rem;
+  }
+
+  .genres__genre {
+    font-size: 6px;
+    margin-right: 0.2rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .movie__summary {
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    line-height: 1rem;
+  }
+}
