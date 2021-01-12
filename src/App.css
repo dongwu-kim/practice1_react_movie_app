@@ -10,9 +10,7 @@ html {
 body {
   margin: 0;
   z-index: -1;
-}
-
-.container {
+  height: 100%;
   background-color: rgb(235, 237, 237);
 }
 
@@ -30,105 +28,37 @@ body {
   z-index: 2;
 }
 
-.movies {
+.container {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
-.movie {
-  position: relative;
-  background-color: #282c34;
-  border: 2px solid rgb(193, 197, 197);
-  color: #61daee;
-  box-shadow: 5px 5px 3px #282c34;
-}
-
-.movie img {
-  position: absolute;
-}
-
-.movie__date {
-  margin: 0;
-}
-
-.movie__title {
+.loader {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.movie__year {
-  opacity: 0.8;
-  font-weight: 300;
-}
-.movie__genres {
-  display: flex;
-  list-style-type: none;
-  opacity: 0.8;
-  font-weight: 300;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  color: #282c34;
+  justify-content: center;
+  align-items: center;
 }
 
-.movie__summary {
-  color: rgb(210, 217, 224);
+.loader__text {
+  font-size: 50px;
 }
 
 @media screen and (max-width: 479px) {
   .header {
     font-size: 1.2rem;
-    height: 4vh;
+    height: 5vh;
     letter-spacing: 0.12rem;
   }
+}
 
-  .movies {
-    margin: 0 2vw 0 2vw;
-  }
-
-  .movies:first-child {
-    margin-top: 5vh;
-  }
-
-  .movie {
-    width: 75vw;
-    margin: 0 auto 0 auto;
-    margin-top: 5vh;
-  }
-
-  .movie img {
-    width: 15vw;
-    height: 12vh;
-    top: 3vh;
-    left: 10px;
-  }
-
-  .movie__date {
-    margin: 3vh 5vw 3vh 20vw;
-  }
-
-  .movie__title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-
-  .movie__year {
-    font-size: 6px;
-    margin-bottom: 0.3rem;
-    letter-spacing: 0.03rem;
-  }
-
-  .movie__genres {
-    margin-bottom: 0.5rem;
-  }
-
-  .genres__genre {
-    font-size: 6px;
-    margin-right: 0.2rem;
-    letter-spacing: 0.03rem;
-  }
-
-  .movie__summary {
-    font-size: 0.8rem;
-    letter-spacing: 0.03rem;
-    line-height: 1rem;
+@media screen and (min-width: 480px) {
+  .header {
+    font-size: 1.4rem;
+    height: 45px;
+    letter-spacing: 0.12rem;
   }
 }

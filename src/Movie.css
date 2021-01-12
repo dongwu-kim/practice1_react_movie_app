@@ -1,0 +1,147 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  position: relative;
+  background-color: #282c34;
+  border: 2px solid rgb(101, 102, 102);
+  color: #61daee;
+  box-shadow: 5px 5px 3px #282c34;
+}
+
+.movie img {
+  position: absolute;
+}
+
+.movie__date {
+  margin: 0;
+}
+
+.movie__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.movie__year {
+  opacity: 0.8;
+  font-weight: 300;
+}
+.movie__genres {
+  display: flex;
+  list-style-type: none;
+  opacity: 0.8;
+  font-weight: 300;
+  flex-wrap: wrap;
+}
+
+.movie__summary {
+  color: rgb(210, 217, 224);
+}
+
+@media screen and (max-width: 479px) {
+  .movies {
+    margin: 5vh 2vw 0 2vw;
+  }
+
+  .movie {
+    width: 75vw;
+    margin: 0 auto 0 auto;
+    margin-top: 5vh;
+  }
+
+  .movie img {
+    width: 15vw;
+    height: 12vh;
+    top: 3vh;
+    left: 10px;
+  }
+
+  .movie__date {
+    margin: 3vh 5vw 3vh 20vw;
+  }
+
+  .movie__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .movie__year {
+    font-size: 6px;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .movie__genres {
+    margin-bottom: 0.5rem;
+  }
+
+  .genres__genre {
+    font-size: 6px;
+    margin-right: 0.2rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .movie__summary {
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    line-height: 1rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .movies {
+    margin: 45px 2vw 0 2vw;
+    padding: 0 25px;
+  }
+
+  .movie {
+    display: flex;
+    width: 35vw;
+    margin: 0 auto 0 auto;
+    margin-top: 10vh;
+  }
+
+  .movie img {
+    width: 120px;
+    height: 190px;
+    top: -25px;
+    left: -20px;
+    position: relative;
+    box-shadow: 3px 3px 10px black;
+  }
+
+  .movie__date {
+    margin: 20px 5px 20px 0px;
+  }
+
+  .movie__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .movie__year {
+    font-size: 10px;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .movie__genres {
+    margin-bottom: 0.5rem;
+  }
+
+  .genres__genre {
+    font-size: 10px;
+    margin-right: 0.2rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .movie__summary {
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    line-height: 1.4rem;
+  }
+}

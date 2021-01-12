@@ -16,11 +16,11 @@ function Movie({ id, title, year, summary, poster, genres }) {
             </li>
           ))}
         </h5>
-        <p className="movie__summary">{summary}</p>
+        <p className="movie__summary">{summary.slice(0, 180)}..</p>
       </div>
     </div>
   );
-} //function component
+} //function component + slice() = 글자수 제한(0자부터~180자까지)
 
 Movie.propTypes = {
   //key: PropTypes.number.isRequired, key는 id와 같기 때문에 생략합니다.(만약 다르다면, 추가해야 합니다.)
