@@ -1,6 +1,17 @@
 .movies {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 120px;
 }
 
 .movie {
@@ -10,7 +21,7 @@
   box-shadow: 5px 5px 3px #282c34;
 }
 
-.movie__container {
+.movie__btn {
   position: relative;
   display: flex;
 }
@@ -52,7 +63,6 @@
   .movie {
     width: 75vw;
     margin: 0 auto 0 auto;
-    margin-top: 5vh;
   }
 
   .movie img {
@@ -104,15 +114,14 @@
   .movie {
     display: flex;
     width: 40vw;
-    margin: 0 auto 0 auto;
-    margin-top: 10vh;
+    margin: 0 2vw;
   }
 
   .movie img {
     width: 120px;
     height: 190px;
     top: -25px;
-    left: -20px;
+    left: -15px;
     position: relative;
     box-shadow: 3px 3px 10px black;
   }

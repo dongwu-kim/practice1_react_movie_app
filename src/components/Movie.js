@@ -2,39 +2,45 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Movie.css";
 import { Link } from "react-router-dom";
+import Comment from "./Comment";
 
 function Movie({ id, title, year, summary, poster, genres, trailer }) {
   return (
-    <div className="movie">
-      <Link
-        className="movie__container"
-        to={{
-          pathname: `/movie/${id}`,
-          state: {
-            id,
-            year,
-            title,
-            summary,
-            poster,
-            genres,
-            trailer,
-          },
-        }}
-      >
-        <img src={poster} alt={title} title={title} />
-        <div className="movie__date">
-          <h4 className="movie__title">{title}</h4>
-          <h5 className="movie__year">{year}</h5>
-          <h5 className="movie__genres">
-            {genres.map((genre, index) => (
-              <li key={index} className="genres__genre">
-                {genre}
-              </li>
-            ))}
-          </h5>
-          <p className="movie__summary">{summary.slice(0, 150)}..</p>
-        </div>
-      </Link>
+    <div className="movie__container">
+      <div className="movie">
+        <Link
+          className="movie__btn"
+          to={{
+            pathname: `/movie/${id}`,
+            state: {
+              id,
+              year,
+              title,
+              summary,
+              poster,
+              genres,
+              trailer,
+            },
+          }}
+        >
+          <img src={poster} alt={title} title={title} />
+          <div className="movie__date">
+            <h4 className="movie__title">{title}</h4>
+            <h5 className="movie__year">{year}</h5>
+            <h5 className="movie__genres">
+              {genres.map((genre, index) => (
+                <li key={index} className="genres__genre">
+                  {genre}
+                </li>
+              ))}
+            </h5>
+            <p className="movie__summary">{summary.slice(0, 100)}..</p>
+          </div>
+        </Link>
+      </div>
+      <div className="comment">
+        <Comment />
+      </div>
     </div>
   );
 } //function component + slice() = 글자수 제한(0자부터~180자까지)

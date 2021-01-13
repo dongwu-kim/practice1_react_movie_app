@@ -14,9 +14,7 @@ class Detail extends React.Component {
     const { location } = this.props;
     if (location.state) {
       console.log(location.state);
-      const trailer = location.state.trailer,
-        title = location.state.title,
-        summary = location.state.summary;
+      const { trailer, title, summary } = location.state;
       if (trailer) {
         return (
           <section className="detail__container">
